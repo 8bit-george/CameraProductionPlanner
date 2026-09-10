@@ -1,0 +1,25 @@
+{
+  "name": "camera-production-planner",
+  "version": "0.1.0",
+  "description": "Plan camera positions for live productions.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "uk.george.cameraplanner",
+    "productName": "Camera Production Planner",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
