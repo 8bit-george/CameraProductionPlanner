@@ -1,7 +1,7 @@
 {
   "name": "camera-production-planner",
   "version": "0.2.1",
-  "description": "Plan camera positions for live productions.",
+  "description": "Plan camera positions for productions.",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
