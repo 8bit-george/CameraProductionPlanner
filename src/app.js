@@ -15,6 +15,10 @@ let cameraIcon = null;
 let cameraScale = 40;
 const tintedIconCache = new Map();
 
+// Replace YOUR_USERNAME with your Buy Me a Coffee username.
+// Example: https://www.buymeacoffee.com/george
+const BUY_ME_A_COFFEE_URL = "https://www.buymeacoffee.com/8bit_george";
+
 const $ = id => document.getElementById(id);
 
 function resizeCanvas() {
@@ -398,6 +402,10 @@ $("zoomIn").addEventListener("click", () => {
 });
 $("zoomOut").addEventListener("click", () => {
   zoom /= 1.15; updateZoomLabel(); draw();
+});
+
+$("donateButton").addEventListener("click", () => {
+  window.open(BUY_ME_A_COFFEE_URL, "_blank");
 });
 
 $("clearPlan").addEventListener("click", () => {

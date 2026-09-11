@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, shell } = require("electron");
 const path = require("path");
 
 function createWindow() {
@@ -12,6 +12,13 @@ function createWindow() {
       contextIsolation: true,
       nodeIntegration: false
     }
+  });
+
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    if (url.startsWith("https://www.buymeacoffee.com/")) {
+      shell.openExternal(url);
+    }
+    return { action: "deny" };
   });
 
   win.loadFile(path.join(__dirname, "index.html"));

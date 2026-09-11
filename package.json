@@ -1,6 +1,6 @@
 {
   "name": "camera-production-planner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Plan camera positions for live productions.",
   "main": "src/main.js",
   "scripts": {

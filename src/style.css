@@ -158,3 +158,11 @@ footer {
 footer button { padding: 2px 8px; }
 .footer-spacer { flex: 1; }
 #canvas { cursor: default; }
+
+.donate {
+  background: #f5c451;
+  color: #161616;
+  border-color: #f5c451;
+  font-weight: 700;
+}
+.donate:hover { background: #ffd66f; }
